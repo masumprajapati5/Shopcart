@@ -2,14 +2,6 @@
 
 A full-stack web application built with **Node.js, Express, MongoDB, React, and express-validator**, implementing secure JWT authentication (short-lived access tokens + long-lived rotating refresh tokens in httpOnly cookies) and full product CRUD functionality.
 
----
-
-## 🌐 Live Deployments
-- **Frontend (Live Project)**: [https://shopcart-two-psi.vercel.app](https://shopcart-two-psi.vercel.app)
-- **Backend API**: [https://shopcart-server-9n8c.onrender.com](https://shopcart-server-9n8c.onrender.com)
-- **GitHub Repository**: [https://github.com/masumprajapati5/Shopcart](https://github.com/masumprajapati5/Shopcart)
-
----
 
 ## 🛠 Tech Stack
 - **Backend**: Node.js, Express.js (ES Modules), Mongoose, express-validator, jsonwebtoken, bcryptjs, cookie-parser, cors.
