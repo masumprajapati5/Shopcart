@@ -2,11 +2,7 @@ import User from "../models/user.model.js"
 import { generateTokens, readRefreshToken } from "../utils/auth.js"
 import bcrypt from 'bcryptjs'
 
-// register controller
-// Requirements: Accept name, email, password, confirmPassword
-// Hash password with bcrypt (min 10 salt rounds)
-// Reject duplicate emails with clear 409 error
-// Return created user (without password) - do not return tokens on register
+
 export const register = async (req, res) => {
     try {
         const { name, email, password } = req.body
