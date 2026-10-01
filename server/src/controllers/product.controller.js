@@ -1,6 +1,5 @@
 import productModel from "../models/product.model.js"
 
-// Create product (Protected)
 export const createProduct = async (req, res) => {
     try {
         const { name, description, stock, price } = req.body
@@ -25,7 +24,6 @@ export const createProduct = async (req, res) => {
     }
 }
 
-// List all products (Public - supports optional pagination: ?page=1&limit=10)
 export const getProducts = async (req, res) => {
     try {
         const page = parseInt(req.query.page) || 1
@@ -67,7 +65,6 @@ export const getProducts = async (req, res) => {
     }
 }
 
-// Get single product by ID (Public - confirms existence)
 export const getProduct = async (req, res) => {
     try {
         const { id } = req.params
@@ -92,13 +89,11 @@ export const getProduct = async (req, res) => {
     }
 }
 
-// Update product (Protected - confirms existence first)
 export const updateProduct = async (req, res) => {
     try {
         const { id } = req.params
         const { name, description, stock, price } = req.body
 
-        // First check if product exists
         const existingProduct = await productModel.findById(id)
         if (!existingProduct) {
             return res.status(404).json({
@@ -126,7 +121,6 @@ export const updateProduct = async (req, res) => {
     }
 }
 
-// Delete product (Protected - confirms existence first)
 export const deleteProduct = async (req, res) => {
     try {
         const { id } = req.params
