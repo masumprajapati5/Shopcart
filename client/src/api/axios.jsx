@@ -2,13 +2,11 @@ import axios from "axios"
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || "/api"
 
-// Base axios instance for public calls (no interceptor recursion)
 export const api = axios.create({
     baseURL: API_BASE_URL,
     withCredentials: true,
 })
 
-// Authenticated axios instance with automatic token injection and 401 refresh interception
 export const authApi = axios.create({
     baseURL: API_BASE_URL,
     withCredentials: true,
@@ -24,7 +22,6 @@ export const getGlobalAccessToken = () => {
     return currentAccessToken
 }
 
-// Request interceptor: attach Bearer token
 authApi.interceptors.request.use(
     (config) => {
         if (currentAccessToken) {
