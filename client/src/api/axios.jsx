@@ -32,7 +32,6 @@ authApi.interceptors.request.use(
     (error) => Promise.reject(error)
 )
 
-// Response interceptor: automatically refresh token on 401
 let isRefreshing = false
 let failedQueue = []
 

@@ -11,7 +11,6 @@ const ProductCard = ({ product, handleDelete }) => {
   return (
     <div className="group relative flex h-full flex-col rounded-2xl border border-stone-200/80 bg-white p-5 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#003d29]/30 hover:shadow-md font-outfit">
       
-      {/* Visual Product Box Placeholder */}
       <div className="relative mb-4 flex h-48 w-full items-center justify-center overflow-hidden rounded-xl bg-[#f5f6f6] transition group-hover:bg-[#eef2f0]">
         <div className="flex flex-col items-center justify-center p-4 text-center">
           <div className="mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-white shadow-xs text-[#003d29]">
@@ -24,7 +23,6 @@ const ProductCard = ({ product, handleDelete }) => {
           </span>
         </div>
 
-        {/* Stock Badge */}
         <div className="absolute top-3 left-3">
           {totalStock === 0 ? (
             <span className="rounded-full bg-rose-50 px-2.5 py-0.5 text-[11px] font-medium text-rose-600 border border-rose-200">
@@ -38,7 +36,6 @@ const ProductCard = ({ product, handleDelete }) => {
         </div>
       </div>
 
-      {/* Product Title and Price Header */}
       <div className="flex items-start justify-between gap-3">
         <Link
           to={`/main/products/${product._id}`}
@@ -53,13 +50,11 @@ const ProductCard = ({ product, handleDelete }) => {
         </span>
       </div>
 
-      {/* Description */}
       <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-stone-500 font-normal">
         {product.description}
       </p>
 
 
-      {/* Action Buttons */}
       <div className="mt-4 grid grid-cols-3 gap-2">
         <button
           type="button"
