@@ -13,7 +13,6 @@ export const AuthProvider = ({ children }) => {
         setGlobalAccessToken(token);
     }, []);
 
-    // Try restoring session from refresh-token cookie on first load
     useEffect(() => {
         const restoreSession = async () => {
             try {
@@ -37,7 +36,7 @@ export const AuthProvider = ({ children }) => {
         try {
             await authApi.post("/auth/logout");
         } catch {
-            // ignore error
+            
         } finally {
             setUser(null);
             updateAccessToken(null);
