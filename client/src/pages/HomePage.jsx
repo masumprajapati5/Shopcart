@@ -85,23 +85,18 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-[#fafbfc] pb-20 font-outfit text-stone-900">
       
-      {/* Hero Banner (Minimalist 50/50 Split Layout with Outfit Font) */}
       <section className="mx-auto max-w-7xl px-4 pt-6 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-xs">
           
-          {/* Left Content Side (Clean White, Outfit font) */}
           <div className="flex flex-col justify-center px-6 py-10 sm:px-12 sm:py-14 lg:px-20 font-outfit">
-            {/* Main Heading in Outfit font */}
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-light tracking-tight text-stone-900 leading-tight">
               Latest Arrivals
             </h1>
 
-            {/* Subheading / Paragraph */}
             <p className="mt-3 sm:mt-4 max-w-md text-sm sm:text-base text-stone-600 leading-relaxed">
               Explore our curated selection of verified premium products designed with quality, function, and modern living in mind.
             </p>
 
-            {/* Left-aligned Button using consistent #003d29 */}
             <div className="mt-6 sm:mt-8 flex items-center">
               <Link
                 to="/main/products/new"
@@ -115,7 +110,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Right Image Side (Full-Bleed Travertine Still Life) */}
           <div className="relative min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] w-full">
             <img
               src="/hero-lifestyle.jpg"
@@ -127,10 +121,8 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Main Catalog Section */}
       <main id="catalog-section" className="mx-auto max-w-7xl px-4 pt-12 sm:px-6 lg:px-8">
         
-        {/* Filter & Search Bar Row */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-stone-200">
           <div>
             <h2 className="text-2xl font-bold text-stone-900">
@@ -142,7 +134,6 @@ const HomePage = () => {
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
-            {/* Search Input with Icon */}
             <div className="relative w-full sm:w-64">
               <input
                 type="text"
@@ -161,7 +152,6 @@ const HomePage = () => {
               </svg>
             </div>
 
-            {/* Sort Dropdown */}
             <div className="flex items-center gap-2">
               <span className="text-xs font-medium text-stone-500">Sort by:</span>
               <select
@@ -178,7 +168,6 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Product Cards Grid */}
         <div className="mt-8">
           {loading ? (
             <div className="flex min-h-[300px] flex-col items-center justify-center gap-3">
