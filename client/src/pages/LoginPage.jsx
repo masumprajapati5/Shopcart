@@ -34,7 +34,6 @@ const Login = () => {
           onSubmit={handleSubmit(handleLogin)}
           className="space-y-4"
         >
-          {/* Email */}
           <div>
             <label className="block text-xs font-medium text-stone-700 mb-1.5">
               Email Address
@@ -60,7 +59,6 @@ const Login = () => {
             )}
           </div>
 
-          {/* Password */}
           <div>
             <label className="block text-xs font-medium text-stone-700 mb-1.5">
               Password
@@ -86,7 +84,6 @@ const Login = () => {
             )}
           </div>
 
-          {/* Login Button */}
           <div className="pt-2">
             <button
               type="submit"
@@ -98,7 +95,6 @@ const Login = () => {
           </div>
         </form>
 
-        {/* Register link */}
         <p className="text-center text-xs text-stone-500 mt-6 font-normal">
           Don't have an account?{" "}
           <span
