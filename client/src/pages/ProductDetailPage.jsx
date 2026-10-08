@@ -60,7 +60,6 @@ const ProductDetailPage = () => {
   return (
     <main className="min-h-screen bg-[#fafbfc] px-4 py-8 sm:px-6 lg:px-8 font-outfit text-stone-900">
       <div className="mx-auto max-w-6xl">
-        {/* Breadcrumb */}
         <div className="mb-6 flex items-center gap-2 text-xs text-stone-500">
           <Link to="/main" className="hover:text-[#003d29] transition font-medium">
             Products
@@ -69,11 +68,9 @@ const ProductDetailPage = () => {
           <span className="text-stone-800 font-semibold truncate max-w-xs">{product.name}</span>
         </div>
 
-        {/* Product Detail Card Layout (Shopcart style 2-column) */}
         <div className="rounded-3xl border border-stone-200/90 bg-white p-6 sm:p-10 shadow-xs">
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
             
-            {/* Left Product Visual Showcase (SVG icon instead of emoji) */}
             <div className="flex flex-col items-center justify-center rounded-2xl bg-[#f5f6f6] p-8 border border-stone-100 min-h-[380px]">
               <div className="flex h-24 w-24 items-center justify-center rounded-full bg-white shadow-sm text-[#003d29]">
                 <svg className="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -83,10 +80,8 @@ const ProductDetailPage = () => {
               <p className="mt-4 text-sm font-medium text-[#003d29]">Verified Inventory Product</p>
             </div>
 
-            {/* Right Details & Actions */}
             <div className="flex flex-col justify-between">
               <div>
-                {/* Title & Badge */}
                 <div className="flex items-start justify-between gap-4">
                   <h1 className="text-2xl sm:text-3xl font-bold text-stone-900">
                     {product.name}
@@ -106,7 +101,6 @@ const ProductDetailPage = () => {
                   {product.description}
                 </p>
 
-                {/* Price Display */}
                 <div className="mt-6 pb-6 border-b border-stone-100">
                   <div className="flex items-baseline gap-2">
                     <span className="text-3xl font-bold text-[#003d29]">
@@ -119,7 +113,6 @@ const ProductDetailPage = () => {
                   </p>
                 </div>
 
-                {/* Stock Counter / Selector */}
                 <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <span className="text-xs font-medium text-stone-700">Quantity</span>
@@ -148,7 +141,6 @@ const ProductDetailPage = () => {
                 </div>
               </div>
 
-              {/* Action Buttons */}
               <div className="mt-8 space-y-3 pt-6 border-t border-stone-100">
                 <div className="grid grid-cols-2 gap-3">
                   <Link
