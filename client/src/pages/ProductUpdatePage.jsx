@@ -136,7 +136,6 @@ const ProductUpdatePage = () => {
           )}
 
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
-            {/* Product Name */}
             <div>
               <label className="block text-xs font-medium text-stone-700 mb-1.5">
                 Product Name
@@ -153,7 +152,6 @@ const ProductUpdatePage = () => {
               )}
             </div>
 
-            {/* Description */}
             <div>
               <label className="block text-xs font-medium text-stone-700 mb-1.5">
                 Description
@@ -170,7 +168,6 @@ const ProductUpdatePage = () => {
               )}
             </div>
 
-            {/* Price & Stock Grid */}
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-medium text-stone-700 mb-1.5">
@@ -208,7 +205,6 @@ const ProductUpdatePage = () => {
               </div>
             </div>
 
-            {/* Submit button */}
             <div className="pt-3">
               <button
                 type="submit"
