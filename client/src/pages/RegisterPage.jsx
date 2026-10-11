@@ -54,7 +54,6 @@ const RegisterPage = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="space-y-4"
         >
-          {/* Name */}
           <div>
             <label className="block text-xs font-medium text-stone-700 mb-1.5">
               Full Name
@@ -84,7 +83,6 @@ const RegisterPage = () => {
             )}
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-xs font-medium text-stone-700 mb-1.5">
               Email Address
@@ -110,7 +108,6 @@ const RegisterPage = () => {
             )}
           </div>
 
-          {/* Password */}
           <div>
             <label className="block text-xs font-medium text-stone-700 mb-1.5">
               Password
@@ -136,7 +133,6 @@ const RegisterPage = () => {
             )}
           </div>
 
-          {/* Confirm Password */}
           <div>
             <label className="block text-xs font-medium text-stone-700 mb-1.5">
               Confirm Password
