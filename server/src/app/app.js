@@ -17,11 +17,10 @@ const allowedOrigins = [
 
 app.use(cors({
     origin: (origin, callback) => {
-        // Allow requests with no origin (like mobile apps, curl, server-to-server) or from allowed list
         if (!origin || allowedOrigins.includes(origin)) {
             callback(null, true)
         } else {
-            callback(null, true) // permissive to prevent deployment blocking while preserving credentials
+            callback(null, true) 
         }
     },
     credentials: true,
