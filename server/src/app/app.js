@@ -35,7 +35,6 @@ app.use(cookieParser())
 app.use("/api/auth", authRoutes)
 app.use("/api/products", productRoutes)
 
-// Fallback 404 handler for undefined routes
 app.use((req, res) => {
     res.status(404).json({
         message: "Endpoint not found"
