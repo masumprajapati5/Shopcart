@@ -167,7 +167,7 @@ const RegisterPage = () => {
           </div>
         </form>
 
-        <p className="text-center text-xs text-stone-500 mt-6 font-normal">
+        <p className="text-center text-xs text-stone-600 mt-6 font-normal">
           Already have an account?{" "}
           <span 
             onClick={() => navigate("/")}
