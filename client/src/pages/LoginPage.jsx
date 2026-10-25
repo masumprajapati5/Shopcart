@@ -95,7 +95,7 @@ const Login = () => {
           </div>
         </form>
 
-        <p className="text-center text-xs text-stone-500 mt-6 font-normal">
+        <p className="text-center text-xs text-stone-600 mt-6 font-normal">
           Don't have an account?{" "}
           <span
             onClick={() => navigate("/register")}
