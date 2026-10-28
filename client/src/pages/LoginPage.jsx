@@ -13,7 +13,6 @@ const Login = () => {
   } = useAuth();
 
   return (
-    // Login Page UI
     <div className="min-h-screen flex items-center justify-center bg-[#fafbfc] px-4 font-outfit text-stone-900">
       <div className="w-full max-w-md bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-xs">
         
@@ -96,7 +95,7 @@ const Login = () => {
           </div>
         </form>
 
-        <p className="text-center text-xs text-stone-600 mt-6 font-normal">
+        <p className="text-center text-xs text-stone-500 mt-6 font-normal">
           Don't have an account?{" "}
           <span
             onClick={() => navigate("/register")}
