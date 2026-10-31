@@ -76,6 +76,7 @@ const ProductFormPage = () => {
   };
 
   return (
+    // product form page
     <main className="min-h-screen bg-[#fafbfc] px-4 py-10 font-outfit text-stone-900">
       <div className="mx-auto max-w-xl">
         <Link

@@ -36,6 +36,7 @@ const ProductDetailPage = () => {
 
   if (error) {
     return (
+      
       <div className="flex min-h-[60vh] flex-col items-center justify-center px-4 font-outfit">
         <p className="text-rose-500 font-medium text-sm">{error}</p>
         <Link
@@ -58,6 +59,7 @@ const ProductDetailPage = () => {
   }
 
   return (
+    // product detail page
     <main className="min-h-screen bg-[#fafbfc] px-4 py-8 sm:px-6 lg:px-8 font-outfit text-stone-900">
       <div className="mx-auto max-w-6xl">
         <div className="mb-6 flex items-center gap-2 text-xs text-stone-500">
