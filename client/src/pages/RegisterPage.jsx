@@ -28,6 +28,7 @@ const RegisterPage = () => {
   };
 
   return (
+    // Register paage
     <div className="min-h-screen flex items-center justify-center bg-[#fafbfc] px-4 font-outfit text-stone-900">
       <div className="w-full max-w-md bg-white p-8 sm:p-10 rounded-2xl border border-stone-200 shadow-xs">
         
